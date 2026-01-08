@@ -1,4 +1,3 @@
-// Make sure "no-js" class is removed when JS is running
 document.documentElement.classList.remove("no-js");
 
 // Theme (dark/light) + persist
@@ -80,12 +79,12 @@ function sendMessage(e) {
     `Hi Karim,\n\nMy name is ${name} (${email}).\n\n${msg}\n\nBest regards,\n${name}`
   );
 
-  // IMPORTANT: This must match the email you want to receive messages on
+
   window.location.href = `mailto:ayada.karim2@gmail.com?subject=${subject}&body=${body}`;
   return false;
 }
 
 window.sendMessage = sendMessage;
 
-// Debug (optional) - you can remove this later
+// Debug
 console.log("script.js loaded ✅");
